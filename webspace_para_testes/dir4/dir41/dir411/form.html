@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alteração de senha de usuário</title>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="bg-primary-subtle min-vh-100">
+
+        <nav class="navbar navbar-expand-lg border-bottom border-dark bg-body-tertiary fs-6 text-body" style="--bs-border-opacity: .5;">
+            <div class="container-fluid">
+              <span class="navbar-brand"><strong>Aluno: </strong>Mateus Henrique Silva Araújo</span>
+              <div class="navbar-nav justify-content-left"><span class="navbar-brand"><strong>RA: </strong> 184940</span></li></div>
+                
+              </div>
+            </div>
+        </nav>
+
+        
+        <div id="app" class="container-fluid p-5 pt-2">
+            
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h1 class="text-center my-3" >EA872 - Laboratório de Programação de Software Básico</h1>
+                </div>
+            </div>
+            
+            <div class="card mb-3">
+                <div class="card-header text-secondary">
+                  Alteração de senha
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title fw-semibold">Formulário para alteração de senha</h4>
+                    <p class="card-text">Forneça seu nome de usuário, senha atual e nova senha. Em seguida confirme a nova senha e pressione enviar para alterar sua senha.</p>
+                   
+                    <form method="post" >
+                        <div class="row mb-3 gx-3 gy-2 justify-content-center">
+                            <div class="col-2">
+                                <label for="username" class="form-label" id="usernameLabel">Nome de usuário</label>
+                                <input type="text" class="form-control" id="username" name="usuário" size="12" maxlength="30" required>
+                                <div class="form-text"><small>
+                                    Forneça o nome de usuário do cadastro que se deseja alterar
+                                </small></div>
+                            </div>
+                            
+                            <div class="col-2">
+                                <label for="password" class="form-label" id="passwordLabel">Senha</label>
+                                <input type="password" class="form-control" id="password" name="senha antiga" size="8" minlength="8" required>
+                                <div class="form-text"><small>
+                                    Forneça a sua senha atual.
+                                </small></div>
+                            </div>
+                            <div class="v-100"></div>
+                            <div class="col-2">
+                                <label for="password" class="form-label" id="newPassowrdLabel">Nova senha</label>
+                                <input type="password" class="form-control" id="newPassowrd" name="senha nova 1" size="8" minlength="8" required>
+                                <div class="form-text"><small>
+                                    Forneça uma nova senha. Ela deve apresentar no mínimo 8 caracteres
+                                </small></div>
+                            </div>
+
+                            <div class="col-2">
+                                <label for="password" class="form-label" id="newPassowrdConfirmLabel">Confirmação de nova senha</label>
+                                <input type="password" class="form-control" id="newPassowrdConfirm" name="senha nova 2" size="8" minlength="8" required>
+                                <div class="form-text"><small>
+                                    Confirme sua nova senha.
+                                </small></div>
+                            </div>
+                            <div class="v-100"></div>
+                            <input type="submit" name="botão envio" value="Enviar" class="col-4 btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+              </div>
+        </div>
+    </body>
+</html>
